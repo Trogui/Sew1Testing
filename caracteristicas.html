@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta name="author" content="Alberto Guerra Rodas" />
+    <meta
+      name="description"
+      content="Plantilla para los diferentes archivos html usados en el curso"
+    />
+    <meta
+      name="keywords"
+      content="palabras,clave,importantes,en,la,página,web"
+    />
+
+    <meta charset="UTF-8" />
+    <!--Definición de la ventana gráfica-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Datos que describen el documento -->
+    <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
+    <link rel="stylesheet" type="text/css" href="estilos/layout.css" />
+
+    <title>Características de React</title>
+  </head>
+
+  <body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+      <h1>React</h1>
+      </header>
+
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="caracteristicas.html">Características</a>
+        <a href="versiones.html">Historia</a>
+        <a href="formulario.html">Formulario</a>
+    </nav>
+    <main>
+    <h2>Características de React</h2>
+    <p>
+      React tiene diferentes características que lo hace uno de los frameworks
+      mas usados en el ámbito frontend, está en un claro top 3 junto a angular y
+      vue y cada vez se destaca mas como sólido top 1.
+    </p>
+
+    <dl>
+      <dt>
+        <a href="https://es.reactjs.org/docs/faq-internals.html">Virtual Dom</a> </dt>
+        <dd>
+        El Virtual DOM es una representación del DOM guardada en memoria, que
+        actúa de intermediario entre los estados de la aplicación y los estados
+        del DOM (vistos por el usuario). Cuando ocurre un cambio en la
+        aplicación web, el virtual DOM interpreta dichos cambios y calcula la
+        manera más eficiente de actualizar el DOM para que renderice la menor
+        cantidad de cambios posibles. En cada actualización de la
+        aplicación el proceso sigue los siguientes pasos:
+      
+        <ol>
+          <li>
+            Cambio de Estado: Se produce un cambio en el estado de algún nodo o
+            elemento, lo que genera un Virtual DOM.
+          </li>
+          <li>
+            Cómputo de Cambios: React compara la diferencia entre el estado del
+            Virtual DOM y el DOM del navegador y detecta los cambios producidos.
+          </li>
+          <li>
+            Re-render: Se definen los cambios en el DOM y la interfaz es
+            actualizada.
+          </li>
+        </ol>
+      </dd>
+      <dt>
+        <a href="https://es.reactjs.org/docs/components-and-props.html"
+          >Componentes y Propiedades(props)</a><dt>
+        <dd>
+        Los componentes te dejan dividir la interfaz de usuario en piezas
+        independientes y reusables. Son similares a las funciones de java ,
+        aceptan inputs denominados "props" y retornan elementos que describen lo
+        que debería aparecer en pantalla.</dd>
+
+      <dt>
+        <a href="https://es.reactjs.org/docs/faq-state.html"> Estado </a> </dt>
+        <dd> El
+        estado es la representación de un componente en un momento concreto.
+        Existen dos tipos de componentes, statefull ( con estado ) y stateless (
+        sin estado )
+      </dd>
+      <dt>
+        <a href="https://es.reactjs.org/docs/state-and-lifecycle.html"
+          >Ciclo de vida</a> </dt>
+          <dd>
+        El ciclo de vida es una consecuencia de estados por la cual tienen que
+        pasar todos los componentes a lo largo de su existencia. Se divide en 3
+        etapas, inicialización,actualización y destrucción
+      </dd>
+     <dt>
+        <a href="https://es.reactjs.org/docs/hooks-intro.html">Hooks: </a> </dt>
+        <dd>
+        Los Hooks son una nueva API de la librería de React que nos permite
+        tener estado, y otras características de React, en los componentes
+        creados con una "function". Esto, antes, no era posible y nos obligaba a
+        crear un componente con "class" para poder acceder a todas las
+        posibilidades de la librería. Y de ahí viene el nombre. Hooks es gancho
+        y, precisamente, lo que hacen, es que te permiten enganchar tus
+        componentes funcionales a todas las características que ofrece React.
+        Actualmente React posee dos tipos de Hooks:
+      
+        <ul>
+          <li>
+            Hooks de estado (useState): React mantendrá este estado entre
+            re-renderizados. useState devuelve un par: el valor de estado actual
+            y una función que le permite actualizarlo. Puedes llamar a esta
+            función desde un controlador de eventos o desde otro lugar. Es
+            similar a this.setState en una clase, excepto que no combina el
+            estado antiguo y el nuevo.
+          </li>
+
+          <li>
+            Hooks de efecto(useEffect): El Hook de efecto, useEffect, agrega la
+            capacidad de realizar efectos secundarios desde un componente de
+            función. Tiene el mismo propósito que
+            componentDidMount,componentDidUpdate y componentWillUnmount en las
+            clases React, pero unificadas en una sola API.
+          </li>
+        </ul>
+      </dd>
+    </dl>
+  </main>
+
+    <footer></footer>
+  </body>
+</html>

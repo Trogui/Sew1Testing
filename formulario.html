@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta name="author" content="Alberto Guerra Rodas" />
+    <meta
+      name="description"
+      content="Plantilla para los diferentes archivos html usados en el curso"
+    />
+    <meta
+      name="keywords"
+      content="palabras,clave,importantes,en,la,página,web"
+    />
+
+    <meta charset="UTF-8" />
+    <!--Definición de la ventana gráfica-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Datos que describen el documento -->
+    <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
+    <link rel="stylesheet" type="text/css" href="estilos/layout.css" />
+
+    <title>Plantilla SEW</title>
+  </head>
+
+  <body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+      <h1>React</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="caracteristicas.html">Características</a>
+      <a href="versiones.html">Historia</a>
+      <a href="formulario.html">Formulario</a>
+  </nav>
+    <main>
+    <h2>Formulario</h2>
+
+    <p>
+      ¿Quieres participar en la siguiente página web que hagamos sobre el resto
+      de frameworks de Js?
+    </p>
+    <p>¡Introduzca sus datos aquí y te tendremos en cuenta!</p>
+
+    <form>
+      <p>
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" type="text" placeholder="Escriba su nombre" />
+      </p>
+      <p>
+        <label for="apellidos"> Apellidos: </label>
+        <input id="apellidos" type="text" placeholder="Escriba sus apellidos" />
+      </p>
+      <p>
+        <label for="correo"> Correo electrónico: </label>
+        <input id="correo" type="email" placeholder="Escriba su correo" />
+      </p>
+      <p>
+        <label for="num">Numero de teléfono:</label>
+        <input id="num" type="number" placeholder="Escriba su número" />
+      </p>
+      <fieldset>
+        <legend>¿Quieres recibir actualizaciones en el correo?</legend>
+        <p>
+          <input id="siInteresado" type="radio" />
+          <label for="siInteresado"> Si, estoy interesado. </label>
+        </p>
+        <p>
+          <input id="noInteresado" type="radio" />
+          <label for="noInteresado">No. </label>
+        </p>
+      </fieldset>
+      <p><label for="motivos"> ¿Por qué quieres participar? </label></p>
+      <textarea id="motivos" name="comments" maxlength="150"></textarea>
+      <p><input type="submit" value="Enviar" /></p>
+    </form>
+    </main>
+
+      
+
+    <footer></footer>
+  </body>
+</html>

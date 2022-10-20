@@ -1,0 +1,87 @@
+/************
+/* Autor: Alberto Guerra Rodas
+/* Descripción: Plantilla de estilos
+/************/
+
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: menu;
+}
+main {
+  grid-area: main;
+}
+aside {
+  grid-area: right;
+}
+footer {
+  grid-area: footer;
+}
+a {
+  grid-area: a;
+}
+
+body {
+  display: grid;
+
+  grid-template-areas:
+    "header header header header header"
+    "menu menu menu menu menu"
+    "main main main main right"
+    "main main main main right"
+    "main main main main right"
+    "main main main main right"
+    "main main main main right"
+    "footer footer footer footer footer";
+
+  gap: 1em;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+nav a {
+  flex-grow: 1;
+  text-align: center;
+}
+
+main {
+  margin-left: 1em;
+  text-align: justify;
+}
+
+dd {
+  padding: 0.5em;
+}
+
+li {
+  padding: 0.15em;
+}
+
+header {
+  text-align: center;
+  margin-top: 0em;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  padding: 1.5em;
+}
+
+aside p {
+  text-align: justify;
+}
+
+td {
+  padding: 1em;
+}
+
+th {
+  text-align: left;
+}
