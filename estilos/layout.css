@@ -45,12 +45,13 @@ nav {
 
 nav a {
   flex-grow: 1;
-  text-align: center;
+  /*text-align: center;*/
+  justify-content: center;
 }
 
 main {
   margin-left: 1em;
-  text-align: justify;
+  text-align:left;
 }
 
 dd {

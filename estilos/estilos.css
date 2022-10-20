@@ -16,6 +16,7 @@ header {
 }
 
 nav a {
+  color: #03045e;
   border: 0.03em solid #03045e;
   font-size: 1.5em;
   text-decoration: none;
