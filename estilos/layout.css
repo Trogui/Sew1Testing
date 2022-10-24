@@ -12,9 +12,6 @@ nav {
 main {
   grid-area: main;
 }
-aside {
-  grid-area: right;
-}
 footer {
   grid-area: footer;
 }
@@ -28,11 +25,11 @@ body {
   grid-template-areas:
     "header header header header header"
     "menu menu menu menu menu"
-    "main main main main right"
-    "main main main main right"
-    "main main main main right"
-    "main main main main right"
-    "main main main main right"
+    "main main main main main"
+    "main main main main main"
+    "main main main main main"
+    "main main main main main"
+    "main main main main main"
     "footer footer footer footer footer";
 
   gap: 1em;
@@ -83,8 +80,5 @@ td {
   padding: 1em;
 }
 
-video, img {
-  max-width: 80%;
-}
 
 
