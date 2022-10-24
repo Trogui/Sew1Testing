@@ -18,14 +18,12 @@ aside {
 footer {
   grid-area: footer;
 }
-a {
-  grid-area: a;
-}
+
 
 body {
   display: grid;
 
-  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: auto auto auto auto auto;
   grid-template-areas:
     "header header header header header"
     "menu menu menu menu menu"
@@ -44,7 +42,6 @@ body {
 nav {
   display: flex;
   flex-direction: row;
-  
 }
 
 nav a {
@@ -54,9 +51,6 @@ nav a {
  
 }
 
-main {
-  padding: 1em;
-}
 
 dd {
   padding: 0.5em;
@@ -82,12 +76,8 @@ video, img {
 footer {
   display: flex;
   flex-direction: column;
-  padding: 1em;
 }
 
-td {
-  padding: 1em;
-}
 
 textarea{
   min-width: 40%;
