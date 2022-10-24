@@ -36,21 +36,24 @@ body {
     "footer footer footer footer footer";
 
   gap: 1em;
+  margin: 1em;
 }
 
 nav {
   display: flex;
   flex-direction: row;
+  
 }
 
 nav a {
   flex-grow: 1;
   display: flex;
   justify-content: center;
+ 
 }
 
 main {
-  margin-left: 1em;
+  padding: 1em;
 }
 
 dd {
@@ -63,27 +66,25 @@ li {
 
 header {
   text-align: center;
-  margin-top: 0em;
 }
 
-aside {
-  display: flex;
-  flex-direction: column;
-  padding: 1.5em;
+aside, footer, td, main, section{
+  padding: 1em;
 }
 
-video {
-
-max-width: 100%;
-
-}
 
 footer {
   display: flex;
   flex-direction: column;
+  padding: 1em;
 }
 
 td {
   padding: 1em;
 }
+
+video, img {
+  max-width: 80%;
+}
+
 
