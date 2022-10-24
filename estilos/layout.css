@@ -19,11 +19,9 @@ footer {
   grid-area: footer;
 }
 
-
 body {
   display: grid;
 
-  grid-template-columns: auto auto auto auto auto;
   grid-template-areas:
     "header header header header header"
     "menu menu menu menu menu"
@@ -33,7 +31,6 @@ body {
     "main main main main right"
     "main main main main right"
     "footer footer footer footer footer";
-
     
   margin: 1%;
 
