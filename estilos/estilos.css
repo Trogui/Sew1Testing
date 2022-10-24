@@ -27,8 +27,16 @@ aside, header, main {
   background-color: #165864;
 }
 
-aside p {
-  font-size: 1.3em;
+aside p, aside li {
+  font-size: 1.4em;
+}
+
+aside h3 {
+  font-size: 1.5em;
+}
+
+aside h2 {
+  font-size: 2em;
 }
 
 
