@@ -1,44 +1,58 @@
 /************
 /* Autor: Alberto Guerra Rodas
-/* Descripción: Plantilla de estilos
+/* Descripción: Hoja de estilos de la práctica 1
 /************/
 
 
-
+/* 0-0-1 */
 body {
-  color: #E0FBFC;
+  color: #e0fbfc;
   background-color: #2f4858;
 }
 
+/* 0-0-1 */
 header {
   font-size: 2em;
 }
 
-nav , footer{
-  background-color:  #02706c;
+/* 0-0-1 */
+nav,
+footer {
+  background-color: #02706c;
 }
-
+/* 0-0-2 */
 nav a {
   font-size: 1.5em;
   text-decoration: none;
 }
 
-aside, header, main {
+/* 0-0-1 */
+aside,
+header,
+main {
   background-color: #165864;
 }
-
-
-
+/* 0-0-2 */
 main dt {
   font-size: 1em;
   font-weight: bold;
 }
 
-a , a:visited {
-  color: #E0FBFC;
+/* 0-1-1 */
+a:visited {
+  color: #e0fbfc;
 }
 
-audio,video, img, footer, aside, main, td, th, nav a, header{
+/* 0-0-2 */
+audio,
+video,
+img,
+footer,
+aside,
+main,
+td,
+th,
+nav a,
+header {
   border: 0.03em solid #caf0f8;
 }
-
