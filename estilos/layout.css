@@ -45,7 +45,7 @@ nav {
 
 nav a {
   flex-grow: 1;
-  /*text-align: center;*/
+  display: flex;
   justify-content: center;
 }
 
@@ -77,6 +77,17 @@ aside {
 
 aside p {
   text-align: justify;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+}
+
+footer section {
+  flex-grow: 1;
+  display: flex;
+  
 }
 
 td {
