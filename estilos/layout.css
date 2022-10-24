@@ -51,7 +51,6 @@ nav a {
 
 main {
   margin-left: 1em;
-  text-align:left;
 }
 
 dd {
@@ -70,30 +69,21 @@ header {
 aside {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; 
   padding: 1.5em;
 }
 
-aside p {
-  text-align: justify;
+aside video {
+
+max-width: 100%;
+
 }
 
 footer {
   display: flex;
-  flex-direction: row;
-}
-
-footer section {
-  flex-grow: 1;
-  display: flex;
-  
+  flex-direction: column;
 }
 
 td {
   padding: 1em;
 }
 
-th {
-  text-align: left;
-}
