@@ -53,3 +53,18 @@ audio,video, img, footer, aside, main, td, th, nav a, header{
   border: 0.03em solid #caf0f8;
 }
 
+@media only screen and (max-width: 600px) {
+  
+  aside p, aside li {
+    font-size: 0.5em;
+  }
+  
+  aside h3 {
+    font-size: 0.8em;
+  }
+  
+  aside h2 {
+    font-size: 0.9em;
+  }
+
+}
