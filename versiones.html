@@ -3,20 +3,11 @@
 <html lang="es">
   <head>
     <meta name="author" content="Alberto Guerra Rodas" />
-    <meta
-      name="description"
-      content="Plantilla para los diferentes archivos html usados en el curso"
-    />
-    <meta
-      name="keywords"
-      content="palabras,clave,importantes,en,la,página,web"
-    />
-
+    <meta name="description" content="Pagina con información sobre React" />
+    <meta name="keywords" content="React, Version, SEW" />
     <meta charset="UTF-8" />
-    <!--Definición de la ventana gráfica-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Datos que describen el documento -->
     <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
     <link rel="stylesheet" type="text/css" href="estilos/layout.css" />
 
@@ -28,10 +19,20 @@
       <h1>React</h1>
     </header>
     <nav>
-      <a href="index.html">Inicio</a>
-      <a href="caracteristicas.html">Características</a>
-      <a href="versiones.html">Historia</a>
-      <a href="formulario.html">Formulario</a>
+      <a title="Inicio" tabindex="1" accesskey="I" href="index.html">Inicio</a>
+      <a
+        title="Características"
+        tabindex="2"
+        accesskey="C"
+        href="caracteristicas.html"
+        >Características</a
+      >
+      <a title="Historia" tabindex="3" accesskey="H" href="versiones.html"
+        >Historia</a
+      >
+      <a title="Formulario" tabindex="4" accesskey="F" href="formulario.html"
+        >Formulario</a
+      >
     </nav>
 
     <aside>
@@ -46,88 +47,90 @@
     </aside>
     <main>
       <h2>Historia</h2>
+      <section>
+        <audio controls>
+          <source src="multimedia/audio/ReactHistory.mp3" type="audio/mpeg" />
+        </audio>
+      </section>
+      <section>
+        <h2>Versiones</h2>
 
-      <h3>Breve historia</h3>
-      <audio controls>
-        <source src="multimedia/audio/ReactHistory.mp3" type="audio/mpeg" />
-      </audio>
+        <table>
+          <tr>
+            <th scope="col" id="version">Versión</th>
+            <th scope="col" id="fecha">Fecha de salida</th>
+            <th scope="col" id="cambios">Cambios Importantes</th>
+          </tr>
+          <tr>
+            <td headers="version">0.3.0</td>
+            <td headers="fecha">29/05/13</td>
+            <td headers="cambios">Salida pública oficial</td>
+          </tr>
+          <tr>
+            <td headers="version">0.5.0</td>
+            <td headers="fecha">20/10/13</td>
+            <td headers="cambios">
+              Mejora del uso de memoria, mejora de compatibilidad con Windows y
+              soporte para los eventos de selección y composición
+            </td>
+          </tr>
+          <tr>
+            <td headers="version">0.9.0</td>
+            <td headers="fecha">20/10/13</td>
+            <td headers="cambios">
+              Soporte para "crossOrigin", "download" y "hrefLang". Añadido
+              tambien soporte para los eventos "onMouseOver" y "onMouseOut"
+            </td>
+          </tr>
 
-      <h3>Versiones</h3>
+          <tr>
+            <td headers="version">0.10.0</td>
+            <td headers="fecha">21/03/14</td>
+            <td headers="cambios">
+              Se añade la función "update" para los datos inmutables y se
+              termina de asegurar que ningún elemento "void" inserta una
+              "closing tag"
+            </td>
+          </tr>
+          <tr>
+            <td headers="version">0.13.0</td>
+            <td headers="fecha">10/03/15</td>
+            <td headers="cambios">
+              Soporte para iteradores y secuencias inmutables. Se quitan las
+              propiedades this._pendingState y this._rootNodeID
+            </td>
+          </tr>
 
-      <table>
-        <tr>
-          <th scope="col" id="version">Versión</th>
-          <th scope="col" id="fecha">Fecha de salida</th>
-          <th scope="col" id="cambios">Cambios Importantes</th>
-        </tr>
-        <tr>
-          <td headers="version">0.3.0</td>
-          <td headers="fecha">29/05/13</td>
-          <td headers="cambios">Salida pública oficial</td>
-        </tr>
-        <tr>
-          <td headers="version">0.5.0</td>
-          <td headers="fecha">20/10/13</td>
-          <td headers="cambios">
-            Mejora del uso de memoria, mejora de compatibilidad con Windows y
-            soporte para los eventos de selección y composición
-          </td>
-        </tr>
-        <tr>
-          <td headers="version">0.9.0</td>
-          <td headers="fecha">20/10/13</td>
-          <td headers="cambios">
-            Soporte para "crossOrigin", "download" y "hrefLang". Añadido tambien
-            soporte para los eventos "onMouseOver" y "onMouseOut"
-          </td>
-        </tr>
+          <tr>
+            <td headers="version">16.0.0</td>
+            <td headers="fecha">26/09/17</td>
+            <td headers="cambios">
+              Mejora de la gestión de errores con la introducción de "error
+              boundaries". React dom admite atributos "non-standart". Cambios al
+              comportamiento del "scheduling" y los métodos de ciclo de vida
+            </td>
+          </tr>
+          <tr>
+            <td headers="version">17.0.0</td>
+            <td headers="fecha">20/10/20</td>
+            <td headers="cambios">
+              Añade una nueva transformacion JSX. Cambios en la delegación de
+              eventos. No introduce nuevas "features" para permitir el update
+              gradual de las versionse mas antiguas
+            </td>
+          </tr>
 
-        <tr>
-          <td headers="version">0.10.0</td>
-          <td headers="fecha">21/03/14</td>
-          <td headers="cambios">
-            Se añade la función "update" para los datos inmutables y se termina
-            de asegurar que ningún elemento "void" inserta una "closing tag"
-          </td>
-        </tr>
-        <tr>
-          <td headers="version">0.13.0</td>
-          <td headers="fecha">10/03/15</td>
-          <td headers="cambios">
-            Soporte para iteradores y secuencias inmutables. Se quitan las
-            propiedades this._pendingState y this._rootNodeID
-          </td>
-        </tr>
-
-        <tr>
-          <td headers="version">16.0.0</td>
-          <td headers="fecha">26/09/17</td>
-          <td headers="cambios">
-            Mejora de la gestión de errores con la introducción de "error
-            boundaries". React dom admite atributos "non-standart". Cambios al
-            comportamiento del "scheduling" y los métodos de ciclo de vida
-          </td>
-        </tr>
-        <tr>
-          <td headers="version">17.0.0</td>
-          <td headers="fecha">20/10/20</td>
-          <td headers="cambios">
-            Añade una nueva transformacion JSX. Cambios en la delegación de
-            eventos. No introduce nuevas "features" para permitir el update
-            gradual de las versionse mas antiguas
-          </td>
-        </tr>
-
-        <tr>
-          <td headers="version">18.0.0</td>
-          <td headers="fecha">29/03/22</td>
-          <td headers="cambios">
-            React concurrente. "Batching" automático. Nuevas "Suspense
-            Features", transiciones y apis de renderizado de cliente y servidor.
-            Nuevos hooks. Nuevos comportamientos del modo estricto
-          </td>
-        </tr>
-      </table>
+          <tr>
+            <td headers="version">18.0.0</td>
+            <td headers="fecha">29/03/22</td>
+            <td headers="cambios">
+              React concurrente. "Batching" automático. Nuevas "Suspense
+              Features", transiciones y apis de renderizado de cliente y
+              servidor. Nuevos hooks. Nuevos comportamientos del modo estricto
+            </td>
+          </tr>
+        </table>
+      </section>
     </main>
 
     <footer>

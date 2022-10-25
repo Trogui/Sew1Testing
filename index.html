@@ -3,20 +3,10 @@
 <html lang="es">
   <head>
     <meta name="author" content="Alberto Guerra Rodas" />
-    <meta
-      name="description"
-      content="Plantilla para los diferentes archivos html usados en el curso"
-    />
-    <meta
-      name="keywords"
-      content="palabras,clave,importantes,en,la,página,web"
-    />
-
+    <meta name="description" content="Pagina con información sobre React" />
+    <meta name="keywords" content="React, Version, SEW" />
     <meta charset="UTF-8" />
-    <!--Definición de la ventana gráfica-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Datos que describen el documento -->
     <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
     <link rel="stylesheet" type="text/css" href="estilos/layout.css" />
 
@@ -24,21 +14,20 @@
   </head>
 
   <body>
-    <!-- Datos con el contenidos que aparece en el navegador -->
     <header>
       <h1>React</h1>
     </header>
 
     <nav>
-      <a href="index.html">Inicio</a>
-      <a href="caracteristicas.html">Características</a>
-      <a href="versiones.html">Historia</a>
-      <a href="formulario.html">Formulario</a>
+      <a title = "Inicio" tabindex = "1" accesskey="I" href="index.html">Inicio</a>
+      <a title = "Características" tabindex = "2" accesskey="C" href="caracteristicas.html">Características</a>
+      <a title = "Historia" tabindex = "3" accesskey="H" href="versiones.html">Historia</a>
+      <a title = "Formulario" tabindex = "4" accesskey="F" href="formulario.html">Formulario</a>
     </nav>
 
     <aside>
       <h2>Datos curiosos</h2>
-      <h3>Canal de Fireship</h3>
+      <h3><a href="https://www.youtube.com/c/Fireship">Canal de Fireship</a></h3>
       <p>
         Los videos que se muestran son propiedad del canal de Fireship, un canal
         que cuenta con mas de 1.5M de suscriptores y que contiene gran variedad
@@ -84,7 +73,7 @@
           las extensiones de React-based que se encargan de las partes no-UI
           (que no forman parte de la interfaz de usuario) de una aplicación web.
         </p>
-
+      
         <video controls preload="auto">
           <source src="multimedia/video/react.mp4" type="video/mp4" />
         </video>

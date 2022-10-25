@@ -3,20 +3,10 @@
 <html lang="es">
   <head>
     <meta name="author" content="Alberto Guerra Rodas" />
-    <meta
-      name="description"
-      content="Plantilla para los diferentes archivos html usados en el curso"
-    />
-    <meta
-      name="keywords"
-      content="palabras,clave,importantes,en,la,página,web"
-    />
-
+    <meta name="description" content="Pagina con información sobre React" />
+    <meta name="keywords" content="React, Version, SEW" />
     <meta charset="UTF-8" />
-    <!--Definición de la ventana gráfica-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Datos que describen el documento -->
     <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
     <link rel="stylesheet" type="text/css" href="estilos/layout.css" />
 
@@ -24,47 +14,33 @@
   </head>
 
   <body>
-    <!-- Datos con el contenidos que aparece en el navegador -->
     <header>
       <h1>React</h1>
     </header>
 
     <nav>
-      <a href="index.html">Inicio</a>
-      <a href="caracteristicas.html">Características</a>
-      <a href="versiones.html">Historia</a>
-      <a href="formulario.html">Formulario</a>
+      <a title = "Inicio" tabindex = "1" accesskey="I" href="index.html">Inicio</a>
+      <a title = "Características" tabindex = "2" accesskey="C" href="caracteristicas.html">Características</a>
+      <a title = "Historia" tabindex = "3" accesskey="H" href="versiones.html">Historia</a>
+      <a title = "Formulario" tabindex = "4" accesskey="F" href="formulario.html">Formulario</a>
     </nav>
 
     <aside>
       <h2>Participantes</h2>
       <p>Actualmente se han registrado para participar:</p>
       <ul>
-        <li>
-          Juan García Colloto
-        </li>
-        <li>
-          Marta Lorena Sánchez Arena
-        </li>
-        <li>
-          Laura González Robles
-        </li>
-        <li>
-          Kevin Fernández Escandón
-        </li>
-        <li>
-          María Magdalena Gracia Ramírez
-        </li>
-        <li>
-          Izan Ocaña Jaen
-        </li>
-        
+        <li>Juan García Colloto</li>
+        <li>Marta Lorena Sánchez Arena</li>
+        <li>Laura González Robles</li>
+        <li>Kevin Fernández Escandón</li>
+        <li>María Magdalena Gracia Ramírez</li>
+        <li>Izan Ocaña Jaen</li>
       </ul>
     </aside>
 
     <main>
+      <section>
       <h2>Formulario</h2>
-
       <p>
         ¿Quieres participar en la siguiente página web que hagamos sobre el
         resto de frameworks de Js?
@@ -105,12 +81,13 @@
         </fieldset>
         <p><label for="motivos"> ¿Por qué quieres participar? </label></p>
         <textarea id="motivos" name="comments" maxlength="150"></textarea>
-        <p><input type="submit" value="Enviar" /></p>
+        <p><input type="submit" value="Enviar"/></p>
       </form>
       <img
         alt="Imagen dando las gracias por participar en la encuesta "
         src="multimedia/img/gracias.jpg"
       />
+    </section>
     </main>
 
     <footer>
