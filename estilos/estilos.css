@@ -57,3 +57,17 @@ nav a,
 header {
   border: 0.03em solid #caf0f8;
 }
+
+/* 0-0-1 */
+video,
+img {
+  max-width: 100%;
+}
+
+/* 0-0-1 */
+textarea {
+  min-width: 40%;
+  min-height: 10em;
+  max-width: 80em;
+  max-height: 30em;
+}

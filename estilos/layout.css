@@ -65,24 +65,10 @@ section {
 }
 
 /* 0-0-1 */
-video,
-img {
-  max-width: 100%;
-}
-
-/* 0-0-1 */
 footer {
   display: flex;
   flex-direction: column;
   grid-area: footer;
-}
-
-/* 0-0-1 */
-textarea {
-  min-width: 40%;
-  min-height: 10em;
-  max-width: 100%;
-  max-height: 30em;
 }
 
 section{
